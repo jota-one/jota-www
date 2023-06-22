@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--c-text);
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--s-nav-top);
+  letter-spacing: -.01em;
+  text-size-adjust: 100%;
+  font-variant-ligatures: contextual common-ligatures;
+  font-feature-settings: "kern" 1,"liga" 1,"calt" 1,"cv10" 1;
+
+  @media (--m) {
+    font-size: 17px;
+  }
+
+  @media (--l) {
+    font-size: 18px;
+  }
+
+  @media (--xl) {
+    font-size: 19px;
+  }
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', -system-ui,system-ui,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--c-background);  
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--s-content-max-width);
+}
+
+main,
+footer {
+  .container {
+    padding: 0 2rem 0 3.5rem;
+
+    @media (--m) {
+      padding-left: 4rem;
+      padding-right: 3rem;
+    }
+  }
+}

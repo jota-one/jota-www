@@ -1,0 +1,22 @@
+#hero {
+  padding: 2.5rem 0;
+
+  &:empty {
+    padding: 0;
+  }
+
+  .author & {
+    margin: -3rem 0 2rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (--l) {
+      min-height: 15rem;
+      padding-top: 3rem;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+}
