@@ -1,28 +1,35 @@
 <template>
   <TopLine />
   <Navigation />
-  <article class="{% block article_type %}{% endblock article_type %}">
-    <div class="container">
-      <div id="title">
-        <h1><slot name="title" /></h1>
-        <h2><slot name="sub_title" /></h2>
-      </div>
-      <div id="content">
-        <div id="aside">
-          <div class="aside-wrapper"><slot name="aside" /></div>
+  <main>
+    <article>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div v-if="page.logo" id="product-logo">
+                <img :src="page.logo" alt="" />
+              </div>
+              <h1>
+                <span v-html="page.title" />
+                <p v-html="page.description" />
+              </h1>
+              <MetaInformations />
+            </div>
+            <div v-if="page.hero" id="hero" class="col">
+              <Hero :type="page.hero.type" :payload="page.hero.payload" />
+            </div>
+          </div>
         </div>
-        <main>
-          <slot />
-        </main>
-      </div>
-    </div>
-  </article>
+      </section>
+      <slot />
+    </article>
+  </main>
   <BottomLine />
 </template>
 
 <script setup lang="ts">
 const { page } = useContent()
-console.log(page.value)
 useHead({
   bodyAttrs: {
     class: computed(() => {

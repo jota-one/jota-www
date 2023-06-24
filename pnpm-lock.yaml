@@ -56,6 +56,9 @@ devDependencies:
   prettier:
     specifier: ^2.5.1
     version: 2.5.1
+  typed.js:
+    specifier: ^2.0.11
+    version: 2.0.11
   typescript:
     specifier: ^4.5.5
     version: 4.5.5
@@ -7253,6 +7256,10 @@ packages:
       call-bind: 1.0.2
       for-each: 0.3.3
       is-typed-array: 1.1.10
+    dev: true
+
+  /typed.js@2.0.11:
+    resolution: {integrity: sha512-1ZORHalEyLob34q738mqmwp0pT6syMigB1SZuTItqdhovWBKFIt7I5uVALXAGQZCg2MCtihCt6uqkoqPJK+9iQ==}
     dev: true
 
   /typescript@4.5.5:

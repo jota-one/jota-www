@@ -1,11 +1,13 @@
 <template>
-  <div v-if="pageMode" class="author page-mode">
-    <img :src="img" :alt="name" />
+  <div>
+    <div v-if="pageMode" class="author page-mode">
+      <img :src="img" :alt="name" />
+    </div>
+    <a v-else class="author" :class="{ big }" :href="url" :title="name">
+      <img :src="img" :alt="name" />
+      <span v-if="name">{{ name }}</span>
+    </a>
   </div>
-  <a v-else class="author" :class="{ big }" :href="url" :title="name">
-    <img :src="img" :alt="name" />
-    <span v-if="name">{{ name }}</span>
-  </a>
 </template>
 
 <script setup lang="ts">
