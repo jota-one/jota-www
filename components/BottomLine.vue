@@ -4,12 +4,12 @@
       <ul>
         <li v-for="soc in social.platforms" :key="soc.url">
           <a
-            aria-label="{{ soc.icon }}"
+            :aria-label="soc.icon"
             class="link"
-            href="{{ soc.url }}"
+            :href="soc.url"
             rel="noopener"
             target="_blank"
-            title="{{ soc.icon }}"
+            :title="soc.icon"
           >
             <Icon :name="soc.icon" />
           </a>

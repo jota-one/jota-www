@@ -1,4 +1,6 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
+import svgLoader from 'vite-svg-loader'
+
 export default defineNuxtConfig({
   okaySuper: false,
   app: {
@@ -34,6 +36,17 @@ export default defineNuxtConfig({
         },
       },
     },
+    markdown: {
+      rehypePlugins: [
+        [
+          'rehype-external-links',
+          {
+            target: '_blank',
+            rel: 'noopener noreferer',
+          },
+        ],
+      ],
+    },
   },
 
   postcss: {
@@ -43,5 +56,9 @@ export default defineNuxtConfig({
       'postcss-nested': {},
       'postcss-custom-media': {},
     },
+  },
+
+  vite: {
+    plugins: [svgLoader()],
   },
 })

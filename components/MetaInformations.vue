@@ -50,10 +50,16 @@
 </template>
 
 <script setup lang="ts">
-const { page } = useContent()
-console.log(page.value)
-const { license, audience, techs, github, npm, website } = page.value
-const websiteName = computed(() => website.replace('http://', ''))
+type Props = {
+  license: string
+  audience: string
+  techs: string[]
+  github: string
+  npm: string
+  website: string
+}
+const props = defineProps<Props>()
+const websiteName = computed(() => props.website.replace('http://', ''))
 </script>
 
 <style scoped>

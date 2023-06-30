@@ -1,0 +1,26 @@
+{
+  "i36n": {
+    "license": "Free / Open source",
+    "techs": ["JavaScript", "Vue.js"],
+    "github": "https://github.com/jota-one/i36n",
+    "npm": "https://www.npmjs.com/package/@jota-one/i36n"
+  },
+  "hateoas-parser": {
+    "license": "Free / Open source",
+    "techs": ["JavaScript"],
+    "github": "https://github.com/jota-one/hateoas-parser",
+    "npm": "https://www.npmjs.com/package/@jota-one/hateoas-parser"
+  },
+  "http-client": {
+    "license": "Free / Open source",
+    "techs": ["JavaScript"],
+    "github": "https://github.com/jota-one/http-client",
+    "npm": "https://www.npmjs.com/package/@jota-one/http-client"
+  },
+  "vue-cli-plugin-aem-clientlib": {
+    "license": "Free / Open source",
+    "techs": ["AEM", "Vue.js"],
+    "github": "https://github.com/jota-one/vue-cli-plugin-aem-clientlib",
+    "npm": "https://www.npmjs.com/package/@jota-one/vue-cli-plugin-aem-clientlib"
+  }
+}

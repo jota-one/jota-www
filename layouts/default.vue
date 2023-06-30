@@ -11,10 +11,18 @@
                 <img :src="page.logo" alt="" />
               </div>
               <h1>
-                <span v-html="page.title" />
+                <span v-if="page.homepage"><Logo /></span>
+                <span v-else v-html="page.title" />
                 <p v-html="page.description" />
               </h1>
-              <MetaInformations />
+              <MetaInformations
+                :license="page.license"
+                :audience="page.audience"
+                :techs="page.techs"
+                :github="page.github"
+                :npm="page.npm"
+                :website="page.website"
+              />
             </div>
             <div v-if="page.hero" id="hero" class="col">
               <Hero :type="page.hero.type" :payload="page.hero.payload" />
