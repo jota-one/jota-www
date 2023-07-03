@@ -1,0 +1,95 @@
+h1 {
+  margin: 2.5rem 0 3rem;
+  max-width: 100%;
+  font-size: 2.5rem;
+  line-height: 0.85;
+  font-weight: 900;
+  color: var(--c-primary);
+  fill: var(--c-primary);
+
+  @media (--m) {
+    font-size: 3rem;
+  }
+
+  @media (--l) {
+    font-size: 3.5rem;
+  }
+
+  .theme-home & {
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    line-height: 0.7;
+    text-transform: lowercase;
+
+    @media (--m) {
+      font-size: 4rem;
+    }
+
+    @media (--l) {
+      font-size: 5rem;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  span {
+    display: block;
+    margin-bottom: 1rem;
+    font-family: Oswald, Impact, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--c-secondary);
+    fill: var(--c-secondary);
+  }
+  
+  j-logo svg {
+    margin-top: -2px;
+    height: 1.25rem;
+    width: auto;
+
+    @media (--m) {
+      height: 1.35rem;
+    }
+
+    @media (--l) {
+      height: 1.5rem;
+    }
+  }
+}
+
+h2 {
+  position: relative;
+  margin-top: 5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  color: var(--c-primary);
+
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5rem;
+    border-top: 0.25rem solid;
+    opacity: 0.25;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+h3 {
+  display: inline-flex;
+  margin-top: 4rem;
+  margin-bottom: 0;
+
+  j-icon {
+    margin-right: 0.5rem;
+  }
+}

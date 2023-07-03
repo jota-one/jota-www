@@ -1,0 +1,22 @@
+{
+  "platforms": [
+    {
+      "url": "https://github.com/jota-one",
+      "icon": "github"
+    },
+    {
+      "url": "https://www.npmjs.com/org/jota-one",
+      "icon": "npm"
+    }
+  ],
+  "disabled": [
+    {
+      "url": "https://linkedin.com/jota-one",
+      "icon": "linkedin"
+    },
+    {
+      "url": "https://twitter.com/jota-one",
+      "icon": "twitter"
+    }
+  ]
+}
