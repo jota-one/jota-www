@@ -1,0 +1,114 @@
+{
+    "users": {
+        "bot": {
+            "name": "AI Bot",
+            "avatar": { "icon": "🤖" }
+        },
+        "tadai": {
+            "name": "Tadaï",
+            "avatar": {"img": "/img/author/tadai.jpg", "url": "/about-us/tadai"}
+        },
+        "jorinho": {
+            "name": "Joriñho",
+            "avatar": {"img": "/img/author/jorinho.jpg", "url": "/about-us/jorinho"}
+        },
+        "jaw": {
+            "name": "Juniors @ Work",
+            "avatar": {"img": "/img/author/jaw.jpg", "url": "/about-us#jaw"}
+        }
+    },
+    "discussion": [
+        {
+            "user": "bot",
+            "msg": "*Why are you building web products?*",
+            "isSender": true
+        },
+        {
+            "user": "tadai",
+            "msg": "It always starts with a problem we encounter in our jobs: most of the time there is no existing software that does exactly what we want/need or it is so complex that it does not really simplify our lives..."
+        },
+        {
+            "user": "jorinho",
+            "msg": "It's also a great way to improve our skills and the quality of our code, time management and all that. Furthermore, we rely so much on free and open source softwares to make a living that we want to give back to the community."
+        },
+        {
+            "user": "bot",
+            "msg": "*Do you really think people care about your softwares?*",
+            "isSender": true
+        },
+        {
+            "user": "jorinho",
+            "msg": "Wait... You're not supposed to ask that kind of question, are you?"
+        },
+        {
+            "user": "tadai",
+            "msg": "<span class=\"ref\">@Joriñho</span> Let me quickly fix that algorithm... :hammer_and_wrench:"
+        },
+        {
+            "user": "bot",
+            "msg": "*❐ ⎕ ⎕ ⎕ ⎕ ⎕ ⎕ ␦...*",
+            "isSender": true
+        },
+        {
+            "user": "tadai",
+            "msg": "Nearly done... Just deploying to the cluster, should be fast...."
+        },
+        {
+            "user": "jorinho",
+            "msg": "<span class=\"ref\">@Tadaï</span> Don't forget the unit tests!!<br>Kidding..."
+        },
+        {
+            "user": "bot",
+            "msg": "`[✔︎] Service running on port 8081`<br>`[✔︎] Starting bot conversation...`<br><br>*But why creating a company and not simply put your stuff on GitHub like geeks usually do?*",
+            "isSender": true
+        },
+        {
+            "user": "tadai",
+            "msg": "Well because we think some of the products we are building may have commercial potential and we'd need a company to license them."
+        },
+        {
+            "user": "jorinho",
+            "msg": "We solve business issues.<br>This comes at a price.<br>Bring the cash :moneybag:"
+        },
+        {
+            "user": "bot",
+            "msg": "*Okay, well then why did you choose that crappy name \"Jota\"?*",
+            "isSender": true
+        },
+        {
+            "user": "jorinho",
+            "msg": "This AI is definitely not ready for production :thinking:\n\n<span class=\"ref\">@Tadaï</span>, maybe writing unit tests would not have been such a bad idea... May I remind you that we usually don't quick fix programs for exactly that reason?"
+        },
+        {
+            "user": "tadai",
+            "msg": "There are some very profound meanings behind that name!<br>3 to be precise...\n\nFirst of all, Jota is inspired by the greek word [iota](https://en.wiktionary.org/wiki/iota) (pronounce \\jɔ.ta\\\\) which is \"a very small, insignificant quantity\". We like to think that those little things make all the difference in..."
+        },
+        {
+            "user": "bot",
+            "msg": "*Ooooohhh my god I feel bored :weary:*",
+            "isSender": true
+        },
+        {
+            "user": "jaw",
+            "msg": "Okay okay, next question please?"
+        },
+        {
+            "user": "bot",
+            "msg": "*What next question??? When is this gonna end?*",
+            "isSender": true
+        },
+        {
+            "user": "tadai",
+            "msg": "Well you know, it's not part of the current plan to..."
+        },
+        {
+            "user": "bot",
+            "msg": "*Heck! This was a rhetorical question... Based on our discussion I deduce that you don't really like to talk about yourselves so I won't bother you any longer. Bye guys :wave:*<br><br>`[✕] Service exited unexpectedly...`",
+            "isSender": true
+        },
+        {
+            "user": "jaw",
+            "msg": "..."
+        }
+    ]
+}

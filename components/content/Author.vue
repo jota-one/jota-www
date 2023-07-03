@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="img || url">
     <div v-if="pageMode" class="author page-mode">
       <img :src="img" :alt="name" />
     </div>
@@ -8,15 +8,17 @@
       <span v-if="name">{{ name }}</span>
     </a>
   </div>
+  <div v-else-if="icon">{{ icon }}</div>
 </template>
 
 <script setup lang="ts">
 type Props = {
   big?: boolean
   pageMode?: boolean
-  img: string
-  name: string
-  url: string
+  img?: string
+  name?: string
+  url?: string
+  icon?: string
 }
 withDefaults(defineProps<Props>(), {
   big: false,

@@ -16,6 +16,14 @@
                 <p v-html="page.description" />
               </h1>
               <MetaInformations
+                v-if="
+                  page.license ||
+                  page.audience ||
+                  page.techs ||
+                  page.github ||
+                  page.npm ||
+                  page.website
+                "
                 :license="page.license"
                 :audience="page.audience"
                 :techs="page.techs"
