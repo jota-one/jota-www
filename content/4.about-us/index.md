@@ -17,9 +17,9 @@ And we don't like talking about ourselves so we'll stop there for this part...
 #right
 <div style="height:100%;padding:2.5rem 0;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;">
 
-  :author{img="/img/author/jorinho.jpg" big=true name="Joriñho" url="/about-us/jorinho"}
+  :author{img="/img/author/jorinho.jpg" :big=true name="Joriñho" url="/about-us/jorinho"}
 
-  :author{img="/img/author/tadai.jpg" big=true name="Tadaï" url="/about-us/tadai"}
+  :author{img="/img/author/tadai.jpg" :big=true name="Tadaï" url="/about-us/tadai"}
 
 </div>
 ::

@@ -12,8 +12,15 @@
               </div>
               <h1>
                 <span v-if="page.homepage"><Logo /></span>
-                <span v-else v-html="page.title" />
-                <p v-html="page.description" />
+                <ContentRendererMarkdown
+                  v-else-if="title"
+                  tag="span"
+                  :value="title"
+                />
+                <ContentRendererMarkdown
+                  v-if="description"
+                  :value="description"
+                />
               </h1>
               <MetaInformations
                 v-if="
@@ -49,7 +56,12 @@
 </template>
 
 <script setup lang="ts">
+import { parseMarkdown } from '~/helpers/md'
+
 const { page } = useContent()
+const title = ref('')
+const description = ref('')
+
 useHead({
   bodyAttrs: {
     class: computed(() => {
@@ -65,5 +77,10 @@ useHead({
       return classes.join(' ')
     }),
   },
+})
+
+onMounted(async () => {
+  title.value = await parseMarkdown(page.value.title)
+  description.value = await parseMarkdown(page.value.description)
 })
 </script>

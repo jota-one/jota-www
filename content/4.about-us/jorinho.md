@@ -2,7 +2,6 @@
 title: "Joriñho"
 description: "Prince of the common sense"
 bodyClass: "author"
-
 hero.type: "author"
 hero.payload.img: "/img/author/jorinho.jpg"
 hero.payload.name: "Joriñho"

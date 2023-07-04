@@ -2,7 +2,6 @@
 title: "Tadaï"
 description: ":tada:"
 bodyClass: "author"
-
 hero.type: "author"
 hero.payload.img: "/img/author/tadai.jpg"
 hero.payload.name: "Tadaï"
