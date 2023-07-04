@@ -28,5 +28,3 @@ const product = computed(() => {
   return {}
 })
 </script>
-
-<style scoped></style>

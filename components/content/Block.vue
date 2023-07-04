@@ -38,5 +38,3 @@ withDefaults(defineProps<Props>(), {
   centerV: false,
 })
 </script>
-
-<style scoped></style>

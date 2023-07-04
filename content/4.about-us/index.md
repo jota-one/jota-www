@@ -1,54 +1,96 @@
 ---
 title: "About us"
-description: "We don't really like to talk about ourselves, but we'll try... "
+description: "Yet another web software company..."
 ---
 
-::block{:centerV=true}
+::block
 #left
-## Who <small class="block opacity-50">are we?</small>
-We are 2 seasoned web software developers from Switzerland.
-
-We've been working for 20 years in many different companies
-(bank, insurance, media, education, health, government).
-
-And we don't like talking about ourselves so we'll stop there for this part...
-:flushed:
+This is how Chat GPT describes us. Let's go through it and make some adjustments.
 
 #right
 <div style="height:100%;padding:2.5rem 0;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:center;">
 
-  :author{img="/img/author/jorinho.jpg" :big=true name="Joriñho" url="/about-us/jorinho"}
+:author{img="/img/author/jorinho.jpg" :big=true name="Joriñho" url="/about-us/jorinho"}
 
-  :author{img="/img/author/tadai.jpg" :big=true name="Tadaï" url="/about-us/tadai"}
+:author{img="/img/author/tadai.jpg" :big=true name="Tadaï" url="/about-us/tadai"}
 
 </div>
+
+:point_up: these are the founders, but we're a lot more in the company.
 ::
 
 ::block
 #left
-## What <small class="block opacity-50">do we do?</small>
-We build web products (as you've probably read on the [homepage](/))
-and we'll tell you [how](#how) and [why](#why) in the next sections...
+## Our mission
+Welcome to Jota One, your trusted partner for tailored web software solutions.
+We are a leading web software development company dedicated to transforming ideas into innovative digital solutions
+that drive growth and enhance customer experiences.
 
-Stay tuned 🥁
-
-Ah, did we already tell you we hate talking about ourselves?
-Well, that's the case, really.
+Our mission is to revolutionize businesses by delivering custom web software solutions that solve unique
+challenges and propel digital success. We are passionate about leveraging technology to drive your business
+forward and help you achieve your goals.
 
 #right
-## How <small class="block opacity-50">do we do that?</small>
-We usually sit in front of the computer and type on the keyboard... obviously...
+
+## &nbsp;
+Okay not bad... But we're not (yet) a *leading* company.
+Hopefully you will help us becoming one.
+
+The second paragraph is quite ambitious, but we are too and some of our
+tools could somehow revolutionize a business or another :thinking_face:
+::
+
+::block
+#left
+## Tailored solutions
+We specialize in crafting bespoke web applications that are tailored to your
+specific needs. Our team of skilled professionals works closely with
+you to understand your business requirements, ensuring that our
+solutions align perfectly with your vision. We believe in delivering
+personalized, scalable, and high-performance software that empowers
+your business to thrive.
+
+#right
+## &nbsp;
+Who is not doing that?
 ::
 
 
 ::block
-## Why <small class="block opacity-50">do we do all this?</small>
-Considering the importance of that question and the brevity of the previous
-parts, we thought writing a little AI to ask us relevant questions
-would be a nice way to extract some of our deeper hidden thoughts.
+#left
+## Expertise and innovation
+With years of industry experience, our talented team of developers,
+designers, and strategists brings a wealth of expertise to every project.
+We stay at the forefront of technology trends to provide innovative
+solutions that give you a competitive edge. From custom web development and
+mobile app development to e-commerce solutions and cloud-based services,
+we have the knowledge and skills to bring your ideas to life.
 
-Because we hate talking about ourselves (not sure we told you about it already
-:thinking:...)
+#right
+## &nbsp;
+We have indeed maaaany years of experience in small to very big companies. So
+we're not only working in cutting-edge technologies, we're also pretty skilled
+in good old stuffs that just work, like SQL or HTML/CSS.
+
+But yes, yes... oldies or edgies, we'll bring your ideas to life!
 ::
 
-:chat{isFull=true id="about-us-ai"}
+::block
+#left
+## Client-Centric Approach
+We prioritize your satisfaction and success. Our client-centric approach
+means that we work closely with you throughout the development process,
+ensuring that our solutions meet your specific needs and exceed your
+expectations. We value open communication, collaboration, and transparency,
+ensuring that you are involved and informed every step of the way.
+
+#right
+## &nbsp;
+This statement is less an empty shell as it sounds, actually. In Jota One we're
+consultant (working in-house for big companies like health insurances, chemistry,
+ media or governement) so we can really feel the needs and when we build web
+products, we build them to answer actual needs of one (or one million) customer(s).
+
+::
+
+<!-- :chat{isFull=true id="about-us-ai"} -->
