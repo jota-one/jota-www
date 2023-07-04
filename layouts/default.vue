@@ -2,7 +2,7 @@
   <TopLine />
   <Navigation />
   <main>
-    <article>
+    <article v-if="page">
       <section>
         <div class="container">
           <div class="row">
@@ -33,7 +33,11 @@
               />
             </div>
             <div v-if="page.hero" id="hero" class="col">
-              <Hero :type="page.hero.type" :payload="page.hero.payload" />
+              <Hero
+                :type="page.hero.type"
+                :payload="page.hero.payload"
+                :payload-path="page.hero.payloadPath"
+              />
             </div>
           </div>
         </div>
@@ -49,10 +53,16 @@ const { page } = useContent()
 useHead({
   bodyAttrs: {
     class: computed(() => {
-      if (page.value.theme) {
-        return `theme-${page.value.theme}`
+      const classes: string[] = []
+      if (page.value?.theme) {
+        classes.push(`theme-${page.value.theme}`)
+      } else {
+        classes.push('theme-default')
       }
-      return ''
+      if (page.value?.bodyClass) {
+        classes.push(page.value.bodyClass)
+      }
+      return classes.join(' ')
     }),
   },
 })
