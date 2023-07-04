@@ -38,6 +38,7 @@ const { navigation } = useContent()
 </script>
 
 <style lang="postcss" scoped>
+@import '../assets/styles/_media.pcss';
 nav {
   position: sticky;
   top: 10rem;
@@ -159,7 +160,7 @@ nav {
       position: absolute;
       top: 1rem;
       left: -1rem;
-      font-family: 'Inter';
+      font-family: 'Inter', sans-serif;
       transform: rotate(145deg);
     }
 

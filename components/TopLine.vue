@@ -17,6 +17,7 @@
 </template>
 
 <style scoped>
+@import '../assets/styles/_media.pcss';
 header {
   position: sticky;
   top: 0;

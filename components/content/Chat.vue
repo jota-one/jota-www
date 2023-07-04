@@ -45,5 +45,3 @@ onMounted(async () => {
   discussion.value = await formatDiscussion()
 })
 </script>
-
-<style scoped></style>

@@ -63,6 +63,7 @@ const websiteName = computed(() => props.website.replace('http://', ''))
 </script>
 
 <style scoped>
+@import '../assets/styles/_media.pcss';
 dl.meta {
   position: relative;
   display: grid;

@@ -222,6 +222,7 @@ const someDate = ref(new Date().toLocaleTimeString().replace(/:\d{2}$/gim, ''))
 </script>
 
 <style scoped>
+@import '../../assets/styles/_media.pcss';
 .showcase {
   a,
   link {
