@@ -1,15 +1,12 @@
 <template>
   <nav>
     <div class="container">
-      <button
-        class="handler"
-        onclick="body.classList.toggle('navigate');document.querySelector('.tooltip').classList.remove('visible')"
-      >
+      <button class="handler" @click="hamburgerClicked">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div class="tooltip">
+      <div v-show="tooltipVisible" class="tooltip">
         You might want
         <br />
         to click here...
@@ -22,9 +19,14 @@
           <span v-if="active">
             {{ title }}
           </span>
-          <NuxtLink v-else :href="path" class="item" :class="{ active }">{{
-            title
-          }}</NuxtLink>
+          <NuxtLink
+            v-else
+            :href="path"
+            class="item"
+            :class="{ active }"
+            @click="closeNavigation"
+            >{{ title }}</NuxtLink
+          >
         </li>
       </ul>
     </div>
@@ -35,6 +37,24 @@
 defineEmits(['close'])
 
 const { navigation } = useContent()
+const tooltipVisible = ref(false)
+
+const closeNavigation = () => {
+  document.body.classList.remove('navigate')
+}
+
+const toggleNavigation = () => {
+  document.body.classList.toggle('navigate')
+}
+
+const hideTooltip = () => {
+  tooltipVisible.value = false
+}
+
+const hamburgerClicked = () => {
+  toggleNavigation()
+  hideTooltip()
+}
 </script>
 
 <style lang="postcss" scoped>

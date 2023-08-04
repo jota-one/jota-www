@@ -15,7 +15,7 @@
           <h3>
             {{ showcase.subTitle }}
           </h3>
-          <div v-html="showcase.description" />
+          <slot name="description" />
           <br />
           <Cta
             :url="showcase.url"
@@ -188,6 +188,7 @@
                 y="80"
                 width="305"
                 height="580"
+                alt=""
                 :src="showcase.img.src"
                 :srcset="showcase.img.srcset"
               />

@@ -51,14 +51,21 @@
 
 <script setup lang="ts">
 type Props = {
-  license: string
-  audience: string
-  techs: string[]
-  github: string
-  npm: string
-  website: string
+  license?: string
+  audience?: string
+  techs?: string[]
+  github?: string
+  npm?: string
+  website?: string
 }
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  license: '',
+  audience: '',
+  techs: () => [],
+  github: '',
+  npm: '',
+  website: '',
+})
 const websiteName = computed(() => props.website.replace('http://', ''))
 </script>
 
