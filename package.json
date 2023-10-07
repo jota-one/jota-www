@@ -19,7 +19,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-vue": "^8.4.1",
     "nuxt": "^3.5.2",
-    "postcss": "^8.4.24",
+    "postcss": "^8.4.31",
     "postcss-custom-media": "^9.1.2",
     "postcss-import": "^15.1.0",
     "postcss-nested": "^6.0.1",
